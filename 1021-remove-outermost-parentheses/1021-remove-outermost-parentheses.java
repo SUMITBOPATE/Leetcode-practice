@@ -9,9 +9,9 @@ class Solution {
                 open++;
             }
            else if(s.charAt(i)== ')' ){
-                close++;
+                open--;
             }
-            if(open==close){
+            if(open==0){
                 sb.append(s.substring(start+1,i));
                     start=i+1;
             }
