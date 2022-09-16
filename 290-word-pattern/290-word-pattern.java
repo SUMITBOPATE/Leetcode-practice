@@ -9,13 +9,13 @@ class Solution {
            
             char ch=pattern.charAt(i);
             if(map.containsKey(ch)){
-                if(!map.get(ch).equals(word[i]))
+                if(!map.get(ch).equals(word[i])){
                     return false;
-                  
+                }
             }  else {
-                    if(map.containsValue(word[i]))
+                    if(map.containsValue(word[i])){
                         return false;
-                    
+                    } 
                     map.put(ch,word[i]);
                      
                 
