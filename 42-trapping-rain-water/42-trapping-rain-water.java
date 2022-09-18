@@ -11,7 +11,7 @@ class Solution {
         int ans = 0;
         for (int i = 0; i < n; ++i) {
             int waterLevel = Math.min(leftMax[i], rightMax[i]);
-            if (waterLevel > height[i]) ans += waterLevel - height[i];
+            if (waterLevel >= height[i]) ans += waterLevel - height[i];
         }
         return ans;
     }
