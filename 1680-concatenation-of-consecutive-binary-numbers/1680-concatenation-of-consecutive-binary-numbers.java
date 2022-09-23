@@ -1,6 +1,6 @@
 class Solution {
     public int concatenatedBinary(int n) {
-              long modulo = (long) (1e9 + 7);
+           final   long modulo = (long) (1e9 + 7);
         long result = 0;
         for (int i = 1; i <= n; i++) {
             // For each i, we shift left the position of result with * 2,
